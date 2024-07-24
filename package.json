@@ -1,0 +1,17 @@
+{
+  "name": "to-do-assignment",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+  "start": "concurrently \"npm run server\" \"npm run client\"",
+  "server": "cd backend && nodemon server.js",
+  "client": "cd frontend && npm start"
+},
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "concurrently": "^8.2.2"
+  }
+}

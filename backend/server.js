@@ -10,7 +10,7 @@ const port = 3001;
 app.use(express.json());
 app.use(cors());
 
-const connectionString = process.env.mongodb://localhost:27017
+const connectionString = process.env.MONGODB_URI
 
 mongoose.connect(connectionString).then(()=> console.log('Connect to the DB..')).catch((err)=>console.log(err))
 
